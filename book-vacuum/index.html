@@ -9,13 +9,16 @@
   <p>Redirecting to booking…</p>
 
   <script>
-    const links = [
-      "https://cal.com/blazecarwash/wash-vacuum-bay-1",
-      "https://cal.com/blazecarwash/wash-vacuum-bay-2",
-      "https://cal.com/blazecarwash/wash-vacuum-bay-3"
-    ];
-    const pick = links[Math.floor(Math.random() * links.length)];
-    window.location.replace(pick);
-  </script>
+  const links = [
+    "https://cal.com/blazecarwash/wash-vacuum-bay-1",
+    "https://cal.com/blazecarwash/wash-vacuum-bay-2",
+    "https://cal.com/blazecarwash/wash-vacuum-bay-3"
+  ];
+
+  const pick = links[Math.floor(Math.random() * links.length)];
+  const url = pick + "?src=blaze&r=" + Math.random().toString(16).slice(2);
+
+  window.location.href = url; // (not replace)
+</script>
 </body>
 </html>
