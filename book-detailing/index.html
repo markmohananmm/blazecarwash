@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Detailing Booking | Blaze CarWash OG</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 24px; text-align:center;">
+  <p>Redirecting to booking…</p>
+
+  <script>
+    const links = [
+      "https://cal.com/blazecarwash/full-detailing-bay-1",
+      "https://cal.com/blazecarwash/full-detailing-bay-2",
+      "https://cal.com/blazecarwash/full-detailing-bay-3"
+    ];
+
+    const pick = links[Math.floor(Math.random() * links.length)];
+    const url = pick + "?src=blaze&r=" + Math.random().toString(16).slice(2);
+
+    window.location.href = url;
+  </script>
+</body>
+</html>
